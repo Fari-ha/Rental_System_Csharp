@@ -1,0 +1,69 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body background="images/backnew.jpg">
+    <form id="form1" runat="server">
+    <div>
+        &nbsp;
+        <table border="0" cellpadding="0" cellspacing="0" style="z-index: 100; left: 0px;
+            width: 100%; position: absolute; top: 0px; height: 100%">
+            <tr>
+                <td style="width: 977px; height: 100px">
+                    &nbsp;
+                    <asp:Image ID="Image1" runat="server" Height="109px" ImageUrl="~/images/rent.jpg"
+                        Style="z-index: 100; left: 707px; position: absolute; top: -12px" Width="257px" />
+                    <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="True" Font-Names="Monotype Corsiva"
+                        Font-Size="36pt" ForeColor="Maroon" Height="50px" Style="z-index: 102; left: 252px;
+                        vertical-align: middle; position: absolute; top: 25px; background-color: #ffffff;
+                        text-align: center" Text=" RENTAL HUB" Width="435px"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 977px; height: 229px">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                    </asp:ContentPlaceHolder>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </td>
+            </tr>
+             <tr>
+                <td style="width: 977px; height: 20px">
+                <center>
+              <a href="#" onclick="history.go(-1)"><b>Back</b></a>
+              </center>
+                </td>
+                
+            </tr>
+            <tr>
+                <td style="width: 977px; height: 34px">
+                <marquee style="width: 1011px; color: #003333; background-color: #339999;"> CopyRights&copy Reserved </marquee>
+                
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="HomePage.master.cs" Inherits="HomePage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body background="images/backnew.JPG">
+    <form id="form1" runat="server">
+    <div>
+        <table border="0" cellpadding="0" cellspacing="0" style="z-index: 100; left: 1px;
+            width: 100%; position: absolute; top: 6px; height: 102%">
+            <tr>
+                <td style="width: 977px; height: 82px">
+                    <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="36pt"
+                        Height="50px" Style="z-index: 100; left: 327px; vertical-align: middle; position: absolute;
+                        top: 0px; text-align: center; background-color: #ffffff;" Text=" RENTAL HUB"
+                        Width="435px" Font-Names="Monotype Corsiva" ForeColor="Maroon" BackColor="#FFFADC"></asp:Label>
+                    &nbsp; &nbsp;&nbsp; &nbsp;
+                    <asp:Menu ID="Menu1" runat="server" BackColor="#FFFBD6" DynamicHorizontalOffset="2"
+                        Font-Names="Verdana" Font-Size="0.9em" ForeColor="#990000" StaticSubMenuIndent="10px"
+                        Style="z-index: 101; left: 11px; position: absolute; top: 33px; text-align: center;
+                        height: 22px;" Width="92px" Font-Bold="True" TabIndex="4">
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                        <DynamicMenuStyle BackColor="#FFFBD6" />
+                        <StaticSelectedStyle BackColor="#FFCC66" />
+                        <DynamicSelectedStyle BackColor="#FFCC66" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                    </asp:Menu>
+                    &nbsp;
+                    <asp:Menu ID="Menu3" runat="server" BackColor="#FFFBD6" DynamicHorizontalOffset="2"
+                        Font-Names="Verdana" Font-Size="0.9em" ForeColor="#990000" StaticSubMenuIndent="10px"
+                        Style="z-index: 103; left: 111px; position: absolute; top: 34px; text-align: center;"
+                        Font-Bold="True" TabIndex="6" Height="21px" Width="101px">
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                        <DynamicMenuStyle BackColor="#FFFBD6" />
+                        <StaticSelectedStyle BackColor="#FFCC66" />
+                        <DynamicSelectedStyle BackColor="#FFCC66" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/enquiry.aspx" Text="Enquiry" Value="Enquiry"></asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                    </asp:Menu>
+                    <asp:Menu ID="Menu4" runat="server" BackColor="#FFFBD6" DynamicHorizontalOffset="2"
+                        Font-Bold="True" Font-Names="Verdana" Font-Size="0.9em" ForeColor="#990000" StaticSubMenuIndent="10px"
+                        Style="z-index: 104; left: 219px; position: absolute; top: 33px; text-align: center"
+                        Width="104px" Height="22px">
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                        <DynamicMenuStyle BackColor="#FFFBD6" />
+                        <StaticSelectedStyle BackColor="#FFCC66" />
+                        <DynamicSelectedStyle BackColor="#FFCC66" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/feedback.aspx" Text="Feedback" Value="Feedback"></asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                    </asp:Menu>
+                    &nbsp;
+                    <asp:Image ID="Image1" runat="server" Height="123px" ImageUrl="~/images/rent.jpg"
+                        Style="z-index: 106; left: 764px; position: absolute; top: 5px" Width="257px" />
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 977px; height: 250px">
+                    <div style="z-index: 100; left: 0px; width: 754px; position: absolute; top: 59px;
+                        height: 65px; border-top-style: groove; border-right-style: groove; border-left-style: groove;
+                        border-bottom-style: groove; background-color: #ffffff; background-image: url('/C:/Documents and Settings/Administrator/Desktop/RENTAL SYSTEM FINAL/images/backnew.jpg');">
+                        <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Italic="False" Style="z-index: 100;
+                            left: 38px; position: absolute; top: 18px" Text="Search" Width="67px"></asp:Label>
+                        <asp:Image ID="Image2" runat="server" ImageUrl="~/images/a6_1.gif" Style="z-index: 101;
+                            left: 126px; position: absolute; top: 20px" />
+                        <asp:Label ID="Label3" runat="server" Font-Bold="True" Style="z-index: 102; left: 184px;
+                            position: absolute; top: 17px" Text="Rental Category"></asp:Label>
+                        <asp:DropDownList ID="ddlcategory" runat="server" Style="z-index: 103; left: 320px;
+                            position: absolute; top: 14px" TabIndex="1" ValidationGroup="searchgroup">
+                            <asp:ListItem>--select--</asp:ListItem>
+                            <asp:ListItem>airconditioners</asp:ListItem>
+                            <asp:ListItem>cars</asp:ListItem>
+                            <asp:ListItem>computers</asp:ListItem>
+                            <asp:ListItem>audiovisuals</asp:ListItem>
+                            <asp:ListItem>furniture</asp:ListItem>
+                            <asp:ListItem>officeequipment</asp:ListItem>
+                            <asp:ListItem>homeappliances</asp:ListItem>
+                            <asp:ListItem>partyrentals</asp:ListItem>
+                        </asp:DropDownList>
+                        <asp:Label ID="Label4" runat="server" Font-Bold="True" Style="z-index: 104; left: 472px;
+                            position: absolute; top: 16px" Text="city"></asp:Label>
+                        <asp:DropDownList ID="ddlcity" runat="server" Style="z-index: 105; left: 516px; position: absolute;
+                            top: 14px" TabIndex="2" ValidationGroup="searchgroup">
+                            <asp:ListItem>--city--</asp:ListItem>
+                            <asp:ListItem>Hyderabad</asp:ListItem>
+                            <asp:ListItem>Ahmedabad</asp:ListItem>
+                            <asp:ListItem>Banglore</asp:ListItem>
+                            <asp:ListItem>Kolkata</asp:ListItem>
+                            <asp:ListItem>Chennai</asp:ListItem>
+                            <asp:ListItem>Delhi</asp:ListItem>
+                            <asp:ListItem>Pune</asp:ListItem>
+                            <asp:ListItem>Mumbai</asp:ListItem>
+                        </asp:DropDownList>
+                        <asp:ImageButton ID="btnSearch" runat="server" ImageUrl="~/images/searchNow_btn.gif"
+                            Style="z-index: 107; left: 621px; position: absolute; top: 15px" OnClick="btnSearch_Click"
+                            TabIndex="3" ValidationGroup="searchgroup" />
+                    </div>
+                    <div style="text-align: left">
+                        <div style="text-align: left">
+                            &nbsp;</div>
+                    </div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 977px; height: 20px">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 977px; height: 20px">
+                    <center>
+                        <a href="#" onclick="history.go(-1)"><b>Back</b></a>
+                    </center>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 977px; height: 20px">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 977px; height: 20px">
+                    <marquee style="width: 1011px; color: #003333; background-color: #339999;"> CopyRights&copy Reserved at TechInnova </marquee>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
