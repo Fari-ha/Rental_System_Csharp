@@ -21,5 +21,15 @@ Provide a form for user questions and comments.
 
 Location specifics.
 
+# How to run:
+
+Clone this repository.
+
+Launch the project in the C# programming environment of your choice.
+
+Launch the software.
+
+
+Reminder : The texts on the website may not appear relevant to you because I simply built it and then let it go, but you are free to edit it to suit your needs and make improvements. ^-^ 
 
 
